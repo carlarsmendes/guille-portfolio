@@ -5,7 +5,10 @@ font-family: 'EB Garamond', serif; */
 
 /* ------GENERAL STYLES----- */
 
-
+html {
+	scroll-behavior: smooth;
+  }
+  
 body{
     background-color: #ffffff;
     padding:0;
@@ -42,7 +45,7 @@ h2{
 	min-height:30vh;
 	/* display:flex;
 	align-items:center; */
-	border:3px solid yellow;
+	/* border:3px solid yellow; */
 	width:(100%-3px);
 }
 
@@ -119,14 +122,14 @@ nav li a{
 /* ----------HEADER------------- */
 
 .header-flex-container {
-	border:3px solid purple;
+	/* border:3px solid purple; */
 	display:flex;
 	justify-content: center;
 	width:100%;
 }
 
 .header-flex-child{
-	border:3px solid orange;
+	/* border:3px solid orange; */
 	padding:0;
 	margin:0;
 	width:100%;
@@ -168,7 +171,7 @@ nav li a{
 	align-items: center;
 	text-align:center;
 	width:100%;
-	border:3px solid green;
+	/* border:3px solid green; */
 }
 
 .works-section h2{
@@ -182,7 +185,7 @@ nav li a{
 	min-width: 400px;
 	max-width:500px;
 	width:95%;
-	border:3px solid red;
+	/* border:3px solid red; */
 }
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
