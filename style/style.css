@@ -77,7 +77,7 @@ nav{
 	overflow: hidden;
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
+	width: 100vw; /* Full width */
 	background-color: #ffffff;
 }	
 
@@ -92,6 +92,10 @@ nav .navbar-brand{
 nav .navbar-brand .color-dot{
 	font-size:24px;
 }
+
+nav .navbar-brand .color-dot.current {
+	background: black;
+  }
 
 
 
