@@ -7,6 +7,9 @@ font-family: 'EB Garamond', serif; */
 
 html {
 	scroll-behavior: smooth;
+	width:100%;
+	padding:0;
+    margin:0;
   }
 
 body{
@@ -16,6 +19,11 @@ body{
 	/* font-family: 'EB Garamond', serif; */
 	color:#1c1515;
 	font-size:18px;
+	max-width:100vw;
+	/* border:3px solid orange; */
+}
+main{
+	max-width:100%;
 }
 
 h1{
@@ -51,10 +59,10 @@ h2{
 
 
 
-.project{
+/* .project{
 	width: 576px;
 	height: 410px;
-}
+} */
 
 p{	
 	font-family: 'Quicksand', sans-serif;
@@ -73,12 +81,14 @@ p{
 nav{
 	display:flex;
 	align-items: center;
+	
 	font-family: 'Quicksand', sans-serif;
 	overflow: hidden;
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100vw; /* Full width */
 	background-color: #ffffff;
+	border:3px solid orange;
 }	
 
 nav .navbar-brand{
@@ -186,23 +196,24 @@ nav li a{
 }
 
 .works-section .container article img{
-	min-width: 350px;
+	min-width: 300px;
 	max-width:500px;
-	width:90%;
+	width:50%;
 	/* border:3px solid red; */
 }
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
-footer{
+ footer{
 	padding:15px 15px 10% 15px;
 	width:100%;
-	/* padding-bottom:10%; */
+	
+	border:3px solid purple;
 }
 
 footer .flex-container{
 	display:flex;
-	width:85%;
+	width:100%;
 	max-width:450px;
 	justify-content: space-between;
 	font-family: 'Quicksand', sans-serif;
@@ -216,7 +227,8 @@ footer .flex-container li{
 	font-stretch: normal;
 	line-height: 1.28;
 	letter-spacing: 3px;
-}
+} 
+
 
 
 
