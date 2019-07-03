@@ -13,3 +13,17 @@ setInterval(function randomWords() {
   //   console.log(wordsArr[randomIndex]);
   //   console.log($randomWord);
 }, 2000); //2000 for every 2 seconds, change later if necessary
+
+//console element that is overflowing the screen width --- 
+//very useful https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
