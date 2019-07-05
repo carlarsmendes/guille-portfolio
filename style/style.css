@@ -55,7 +55,7 @@ h2 {
   /* display:flex;
 	align-items:center; */
   /* border:3px solid yellow; */
-  width: (100%-3px);
+  width: 100%;
 }
 
 /* .project{
@@ -86,6 +86,7 @@ nav {
   top: 0; /* Position the navbar at the top of the page */
   width: 100vw; /* Full width */
   background-color: #ffffff;
+  z-index: 1;
   /* border: 3px solid orange; */
 }
 
@@ -183,11 +184,11 @@ nav li a {
 .works-section .container {
   display: flex;
    align-items: center;
-  /* text-align: center;  */
-  width: 100%;
-  flex-wrap: wrap;
-
-  /* border:3px solid green; */
+   /* text-align: center;  */
+   width: 100%;
+   flex-wrap: wrap;
+   
+  /* border:3px solid purple; */
 }
 
 .works-section h2 {
@@ -197,38 +198,11 @@ nav li a {
   /* border:3px solid purple; */
 }
 
-
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.project{
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.project-description {
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: .3s, visibility .3s;  
-}
-.project:hover .project-description {
-  visibility: visible;
-  opacity: 1;  
-}
-
 .works-section .container .project img {
   min-width: 300px;
   max-width: 600px;
   width: 50%;
+  transition: filter .2s
   /* border:3px solid red; */
 }
 .works-section .container .project img:hover {
@@ -246,10 +220,40 @@ nav li a {
   width: 100%;
 }
 .row-2 {
-  /* border: 4px solid #1c1515; */
+  /* border: 4px solid green; */
   width: 100%;
   display: flex;
 }
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.project{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.project-description {
+  visibility: hidden;
+  position: absolute;
+  font-weight: bold;
+
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: visibility .2s;  
+}
+.project:hover .project-description {
+  visibility: visible;
+  opacity: 1;  
+}
+
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
@@ -260,7 +264,7 @@ nav li a {
   background-color: #fafafa;
   flex-direction: column;
   align-items: flex-start;
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
 }
 
 
@@ -290,9 +294,15 @@ footer .flex-container li {
     min-height: 30vh;
     display: flex;
     align-items: center;
+    width: 100%;
     margin: 0 auto 0 auto; 
-    width: 90%;
+        width: 90%;
   }
+  /* body {
+        margin: 0 auto 0 auto; 
+        width: 90%;
+  } */
+
 
   .col-2 {
     width: 50%;
@@ -307,6 +317,12 @@ footer .flex-container li {
   .row-2 {
   width: 50%;
   margin-top: 30px;
+  }
+  .section main-header-section{
+    width: 100%;
+    background-color: #fafafa
+
+
   }
 
   /*---------Specific Styles------------*/
