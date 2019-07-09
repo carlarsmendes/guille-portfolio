@@ -20,7 +20,7 @@ body {
   color: #1c1515;
   font-size: 18px;
   max-width: 100%;
-  
+
   /* border:3px solid orange; */
 }
 main {
@@ -215,8 +215,8 @@ nav li a {
   min-width: 300px;
   max-width: 600px;
   width: 50%;
-  transition: filter .2s;
-  object-fit: cover
+  transition: filter 0.2s;
+  object-fit: cover;
   /* border:3px solid red; */
 }
 .works-section .container .project:hover img {
@@ -239,7 +239,7 @@ nav li a {
   display: flex;
 }
 
-.project{
+.project {
   position: relative;
   text-align: center;
   color: white;
@@ -256,10 +256,10 @@ nav li a {
   transition: visibility 0.2s;
 }
 .project-description p:nth-child(2) {
-  font-size: 18px
+  font-size: 18px;
 }
 .project-description p:nth-child(1) {
-  font-size: 24px
+  font-size: 24px;
 }
 .project:hover .project-description {
   visibility: visible;
@@ -269,8 +269,11 @@ nav li a {
   width: 100%;
   background-color: #fafafa;
 }
-#letstalk, #about, #works, #header {
-  margin: 0 auto 0 auto; 
+#letstalk,
+#about,
+#works,
+#header {
+  margin: 0 auto 0 auto;
   width: 90%;
 }
 
@@ -318,7 +321,7 @@ footer .flex-container li {
         width: 90%; */
   }
   body {
-        font-size:24px
+    font-size: 24px;
   }
   .col-2 {
     width: 50%;
@@ -333,8 +336,7 @@ footer .flex-container li {
   .row-1 {
     width: 100%;
     display: flex;
-    justify-content: space-between
-
+    justify-content: space-between;
   }
   .row-2 {
     width: 50%;
@@ -344,8 +346,6 @@ footer .flex-container li {
     width: 100%;
     background-color: #fafafa;
   }
-
-    
 
   /*---------Specific Styles------------*/
 
@@ -381,22 +381,7 @@ footer .flex-container li {
   }
 }
 
-/* EXPERIMENTING */
-
-/* nav.about {
-  background-color: yellow;
-  color: #eef;
-}
-
-nav.works {
-  background-color: teal;
-  color: #eef;
-}
-
-nav.letstalk {
-  background-color: yellowgreen;
-  color: #eef;
-} */
+/* -----DOT ACTIVE NAV BAR */
 
 nav .color-dot-nav-active {
   color: #d0021b;
@@ -407,4 +392,32 @@ nav .color-dot-nav-active {
 
 nav .color-dot-nav-inactive {
   visibility: hidden;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+/* ---------- MEDIA QUERIES FOR BIGGER SCREENS--------------- */
+@media only screen and (max-width: 825px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  footer a {
+    font-size: 13px;
+  }
 }
