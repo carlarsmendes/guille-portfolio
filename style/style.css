@@ -215,12 +215,8 @@ nav li a {
   min-width: 300px;
   max-width: 600px;
   width: 50%;
-<<<<<<< HEAD
   transition: filter .2s;
   object-fit: cover
-=======
-  transition: filter 0.2s;
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   /* border:3px solid red; */
 }
 .works-section .container .project:hover img {
@@ -243,17 +239,7 @@ nav li a {
   display: flex;
 }
 
-<<<<<<< HEAD
 .project{
-=======
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.project {
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   position: relative;
   text-align: center;
   color: white;
@@ -279,7 +265,6 @@ nav li a {
   visibility: visible;
   opacity: 1;
 }
-<<<<<<< HEAD
 .wraper-bg {
   width: 100%;
   background-color: #fafafa;
@@ -288,8 +273,6 @@ nav li a {
   margin: 0 auto 0 auto; 
   width: 90%;
 }
-=======
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
@@ -334,17 +317,9 @@ footer .flex-container li {
     /* margin: 0 auto 0 auto; 
         width: 90%; */
   }
-<<<<<<< HEAD
   body {
         font-size:24px
   }
-=======
-  /* body {
-        margin: 0 auto 0 auto; 
-        width: 90%;
-  } */
-
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   .col-2 {
     width: 50%;
   }
@@ -357,12 +332,9 @@ footer .flex-container li {
   }
   .row-1 {
     width: 100%;
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between
 
-=======
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   }
   .row-2 {
     width: 50%;
@@ -372,32 +344,8 @@ footer .flex-container li {
     width: 100%;
     background-color: #fafafa;
   }
-<<<<<<< HEAD
 
     
-=======
-  #letstalk {
-    margin: 0 auto 0 auto;
-    width: 90%;
-  }
-  #about {
-    margin: 0 auto 0 auto;
-    width: 90%;
-  }
-
-  #works {
-    margin: 0 auto 0 auto;
-    width: 90%;
-  }
-
-  #header {
-    margin: 0 auto 0 auto;
-    width: 90%;
-  }
-  .navbar-brand {
-    margin-left: 4%;
-  }
->>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
 
   /*---------Specific Styles------------*/
 
