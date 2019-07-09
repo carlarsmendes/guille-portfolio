@@ -383,7 +383,7 @@ footer .flex-container li {
 
 /* EXPERIMENTING */
 
-nav.about {
+/* nav.about {
   background-color: yellow;
   color: #eef;
 }
@@ -396,4 +396,15 @@ nav.works {
 nav.letstalk {
   background-color: yellowgreen;
   color: #eef;
+} */
+
+nav .color-dot-nav-active {
+  color: #d0021b;
+  letter-spacing: 0.69px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .color-dot-nav-inactive {
+  visibility: hidden;
 }
