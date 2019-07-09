@@ -19,8 +19,9 @@ body {
   margin: 0;
   /* font-family: 'EB Garamond', serif; */
   color: #1c1515;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 100%;
+  
   /* border:3px solid orange; */
 }
 main {
@@ -202,10 +203,11 @@ nav li a {
   min-width: 300px;
   max-width: 600px;
   width: 50%;
-  transition: filter .2s
+  transition: filter .2s;
+  object-fit: cover
   /* border:3px solid red; */
 }
-.works-section .container .project img:hover {
+.works-section .container .project:hover img {
   min-width: 300px;
   max-width: 600px;
   filter: brightness(25%);
@@ -225,13 +227,6 @@ nav li a {
   display: flex;
 }
 
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
 .project{
   position: relative;
   text-align: center;
@@ -242,18 +237,30 @@ nav li a {
   visibility: hidden;
   position: absolute;
   font-weight: bold;
-
   top: 50%;
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: visibility .2s;  
 }
+.project-description p:nth-child(2) {
+  font-size: 18px
+}
+.project-description p:nth-child(1) {
+  font-size: 24px
+}
 .project:hover .project-description {
   visibility: visible;
   opacity: 1;  
 }
-
+.wraper-bg {
+  width: 100%;
+  background-color: #fafafa;
+}
+#letstalk, #about, #works, #header {
+  margin: 0 auto 0 auto; 
+  width: 90%;
+}
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
@@ -298,52 +305,34 @@ footer .flex-container li {
     /* margin: 0 auto 0 auto; 
         width: 90%; */
   }
-  /* body {
-        margin: 0 auto 0 auto; 
-        width: 90%;
-  } */
-
-
+  body {
+        font-size:24px
+  }
   .col-2 {
     width: 50%;
   }
+  project {
+    min-height: 100%;
+  }
   .works-section .container .project img {
     width: 100%;
+    height: 100%;
   }
   .row-1 {
     width: 100%;
+    display: flex;
+    justify-content: space-between
 
   }
   .row-2 {
   width: 50%;
   margin-top: 30px;
   }
-
   .wraper-bg {
     width: 100%;
     background-color: #fafafa;
   }
-  #letstalk {
-    margin: 0 auto 0 auto; 
-    width: 90%;
-  }
-  #about {
-    margin: 0 auto 0 auto; 
-    width: 90%;
-  }
 
-  #works {
-    margin: 0 auto 0 auto; 
-    width: 90%;
-    }
-
-    #header {
-      margin: 0 auto 0 auto; 
-      width: 90%
-    }
-    .navbar-brand {
-      margin-left: 4%
-    }
     
 
   /*---------Specific Styles------------*/
