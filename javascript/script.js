@@ -1,48 +1,70 @@
 // Here to write the random words(so that they're not in CSS anymore)
 const $randomWord = document.getElementById("randomWord");
+
 const $mainSection = document.getElementById("main-section");
+
 const $letsTalkSection = document.getElementById("letstalk");
 const $aboutSection = document.getElementById("about");
 const $worksSection = document.getElementById("works");
 
-console.log("aboutSection Y", $aboutSection.getBoundingClientRect().top);
-console.log("letsTalkSection Y", $letsTalkSection.getBoundingClientRect().top);
-console.log("worksSection Y", $worksSection.getBoundingClientRect().top);
-console.log("aboutSection Y", $aboutSection.getBoundingClientRect().top);
+const $letsTalkY =
+  $letsTalkSection.getBoundingClientRect().top + window.scrollY - 500;
+const $aboutY =
+  $aboutSection.getBoundingClientRect().top + window.scrollY - 500;
+const $worksY =
+  $worksSection.getBoundingClientRect().top + window.scrollY - 500;
+
+const $navLinkAbout = document.getElementById("nav-link-about");
+const $navLinkWorks = document.getElementById("nav-link-works");
+const $navLinkLetstalk = document.getElementById("nav-link-letstalk");
+
+const $navLinksArray = [$navLinkAbout, $navLinkWorks, $navLinkLetstalk];
+
+console.log("aboutSection Y", $aboutY);
+console.log("letsTalkSection Y", $letsTalkY);
+console.log("worksSection Y", $worksY);
 
 window.onscroll = () => {
   const nav = document.querySelector("#navbar");
+  //console.log("this.scrollY", this.scrollY);
 
-  if (this.scrollY < $aboutSection.getBoundingClientRect().top + 400) {
-    nav.className = "";
-    console.log("Header");
-  } else if (
-    this.scrollY >=
-    $letsTalkSection.getBoundingClientRect().top + 1000
-  ) {
-    nav.className = "letstalk";
+  if (this.scrollY >= $letsTalkY) {
+    console.log("$letsTalkY", $letsTalkY, "scroll.y", this.scrollY);
     console.log("Let's Talk");
-  } else if (this.scrollY >= $worksSection.getBoundingClientRect().top + 400) {
-    nav.className = "works";
+    nav.className = "letstalk";
+
+    $navLinkLetstalk.className = "color-dot-nav-active";
+    $navLinkAbout.className = "color-dot-nav-inactive";
+    $navLinkWorks.className = "color-dot-nav-inactive";
+  } else if (this.scrollY >= $worksY && this.scrollY < $letsTalkY) {
     console.log("Works");
-  } else if (this.scrollY >= $aboutSection.getBoundingClientRect().top + 200) {
-    nav.className = "about";
+    nav.className = "works";
+    $navLinkWorks.className = "color-dot-nav-active";
+    $navLinkAbout.className = "color-dot-nav-inactive";
+    $navLinkLetstalk.className = "color-dot-nav-inactive";
+  } else if (this.scrollY >= $aboutY && this.scrollY < $worksY) {
+    console.log("$aboutY", $aboutY, "scroll.y", this.scrollY);
+    $navLinkAbout.className = "color-dot-nav-active";
+    $navLinkLetstalk.className = "color-dot-nav-inactive";
+    $navLinkWorks.className = "color-dot-nav-inactive";
     console.log("About");
-  } else nav.className = "";
+  } else {
+    console.log("Header");
+    nav.className = "";
+    $navLinkAbout.className = "color-dot-nav-inactive";
+    $navLinkLetstalk.className = "color-dot-nav-inactive";
+    $navLinkWorks.className = "color-dot-nav-inactive";
+  }
 };
 
 // ---------FUNCTION FOR RANDOMIZING WORDS IN HEADER------------
 
-setInterval(function randomWords() {
-  // Random number generator
-  let wordsArr = ["Service Designer", "Sushi Lover", "Design Thinker"];
-  let randomIndex = Math.round(Math.random() * (wordsArr.length - 1));
-  // jQuery: Change the word in the span for a random one in the array of words
-  // console.log("wordsArr[randomIndex]", wordsArr[randomIndex]);
-  $randomWord.innerText = wordsArr[randomIndex];
-  //console.log("$randomWord", $randomWord);
-  //console.log("$randomWord.innerText", $randomWord.innerText);
-}, 2000); //2000 for every 2 seconds, change later if necessary
+var index = 0;
+let wordsArr = ["Service Designer", "Sushi Lover", "Design Thinker"];
+
+setInterval(function() {
+  $randomWord.innerText = wordsArr[index++ % wordsArr.length];
+}, 3000); //3000 for every 3 seconds, change later if necessary
 
 //console element that is overflowing the screen width ---
 //very useful https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
