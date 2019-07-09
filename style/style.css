@@ -305,6 +305,8 @@ footer .flex-container li {
     width: 100%;
     margin: 0 auto 0 auto;
     width: 90%;
+    /* margin: 0 auto 0 auto; 
+        width: 90%; */
   }
   /* body {
         margin: 0 auto 0 auto; 
@@ -324,9 +326,31 @@ footer .flex-container li {
     width: 50%;
     margin-top: 30px;
   }
-  .section main-header-section {
+
+  .wraper-bg {
     width: 100%;
     background-color: #fafafa;
+  }
+  #letstalk {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+  #about {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+
+  #works {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+
+  #header {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+  .navbar-brand {
+    margin-left: 4%;
   }
 
   /*---------Specific Styles------------*/
