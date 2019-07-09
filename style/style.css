@@ -12,7 +12,6 @@ html {
   margin: 0;
 }
 
-
 body {
   background-color: #ffffff;
   padding: 0;
@@ -155,7 +154,7 @@ nav li a {
 .main-header-section {
   display: flex;
   flex-direction: column;
-  padding: 15px 0 15px  0;
+  padding: 15px 0 15px 0;
   margin-top: 10%;
 }
 
@@ -164,31 +163,44 @@ nav li a {
   /* justify-items: flex-end; */
 }
 
+.animation {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* -------------ABOUT------------------- */
 
 .about-section {
-  padding: 15px 0 15px  0;
-  background-color: #fafafa
-
-
+  padding: 15px 0 15px 0;
+  background-color: #fafafa;
 }
 
 /* -------------WORKS------------------- */
 
 .works-section {
-  padding: 15px 0 15px  0;
+  padding: 15px 0 15px 0;
   display: flex;
-  flex-direction: column
-
+  flex-direction: column;
 }
 
 .works-section .container {
   display: flex;
-   align-items: center;
-   /* text-align: center;  */
-   width: 100%;
-   flex-wrap: wrap;
-   
+  align-items: center;
+  /* text-align: center;  */
+  width: 100%;
+  flex-wrap: wrap;
+
   /* border:3px solid purple; */
 }
 
@@ -203,8 +215,12 @@ nav li a {
   min-width: 300px;
   max-width: 600px;
   width: 50%;
+<<<<<<< HEAD
   transition: filter .2s;
   object-fit: cover
+=======
+  transition: filter 0.2s;
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   /* border:3px solid red; */
 }
 .works-section .container .project:hover img {
@@ -227,7 +243,17 @@ nav li a {
   display: flex;
 }
 
+<<<<<<< HEAD
 .project{
+=======
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.project {
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   position: relative;
   text-align: center;
   color: white;
@@ -241,7 +267,7 @@ nav li a {
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
-  transition: visibility .2s;  
+  transition: visibility 0.2s;
 }
 .project-description p:nth-child(2) {
   font-size: 18px
@@ -251,8 +277,9 @@ nav li a {
 }
 .project:hover .project-description {
   visibility: visible;
-  opacity: 1;  
+  opacity: 1;
 }
+<<<<<<< HEAD
 .wraper-bg {
   width: 100%;
   background-color: #fafafa;
@@ -261,6 +288,8 @@ nav li a {
   margin: 0 auto 0 auto; 
   width: 90%;
 }
+=======
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
@@ -274,7 +303,6 @@ nav li a {
   /* border: 3px solid purple; */
 }
 
-
 footer .flex-container {
   display: flex;
   width: 100%;
@@ -282,7 +310,6 @@ footer .flex-container {
   justify-content: space-between;
   font-family: "Quicksand", sans-serif;
   padding: 0px;
-
 }
 
 footer .flex-container li {
@@ -302,12 +329,22 @@ footer .flex-container li {
     display: flex;
     align-items: center;
     width: 100%;
+    margin: 0 auto 0 auto;
+    width: 90%;
     /* margin: 0 auto 0 auto; 
         width: 90%; */
   }
+<<<<<<< HEAD
   body {
         font-size:24px
   }
+=======
+  /* body {
+        margin: 0 auto 0 auto; 
+        width: 90%;
+  } */
+
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   .col-2 {
     width: 50%;
   }
@@ -320,20 +357,47 @@ footer .flex-container li {
   }
   .row-1 {
     width: 100%;
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between
 
+=======
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
   }
   .row-2 {
-  width: 50%;
-  margin-top: 30px;
+    width: 50%;
+    margin-top: 30px;
   }
   .wraper-bg {
     width: 100%;
     background-color: #fafafa;
   }
+<<<<<<< HEAD
 
     
+=======
+  #letstalk {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+  #about {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+
+  #works {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+
+  #header {
+    margin: 0 auto 0 auto;
+    width: 90%;
+  }
+  .navbar-brand {
+    margin-left: 4%;
+  }
+>>>>>>> bff6ac4983a1f882dd29e271db857667e100f06c
 
   /*---------Specific Styles------------*/
 
@@ -367,4 +431,21 @@ footer .flex-container li {
     display: flex;
     justify-items: flex-end;
   }
+}
+
+/* EXPERIMENTING */
+
+nav.about {
+  background-color: yellow;
+  color: #eef;
+}
+
+nav.works {
+  background-color: teal;
+  color: #eef;
+}
+
+nav.letstalk {
+  background-color: yellowgreen;
+  color: #eef;
 }
