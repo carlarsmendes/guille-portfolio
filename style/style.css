@@ -218,7 +218,7 @@ nav li a {
   width: 50%;
   transition: filter 0.2s;
   object-fit: cover;
-  /* border:3px solid red; */
+  border:3px solid red;
 }
 .works-section .container .project:hover img {
   min-width: 300px;
@@ -284,7 +284,7 @@ nav li a {
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
 #letstalk {
-  padding: 10% 0 10% 0;
+  padding: 15% 0 15% 0;
   display: flex;
   margin: 0 auto 0 auto;
   width: 90%;
