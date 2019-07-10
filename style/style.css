@@ -71,7 +71,7 @@ p {
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
@@ -79,15 +79,18 @@ nav {
   width: 100vw; /* Full width */
   background-color: #ffffff;
   z-index: 1;
+  height: 50px;
+  padding-bottom: 10px;
   /* border: 3px solid orange; */
 }
 
 nav .navbar-brand {
   flex-grow: 1;
-  /* border:3px solid orange; */
-  padding: 10px;
+  /* border: 3px solid orange; */
+  /* padding: 10px; */
   text-decoration: none;
   color: #1c1515;
+  align-content: flex-end;
 }
 
 nav .navbar-brand .color-dot {
@@ -101,9 +104,10 @@ nav .navbar-brand .color-dot.current {
 nav ul {
   width: 50%;
   display: flex;
-  /* border:3px solid green; */
+  /* border: 3px solid green; */
   justify-content: space-evenly;
-  padding: 20px 0 20px 0;
+  align-items: flex-end;
+  padding: 0 0 0 0;
   margin: 0;
 }
 
@@ -113,6 +117,7 @@ nav li {
   padding: 0;
   margin: 0;
   text-align: center;
+  /* border: 3px solid yellow; */
 }
 
 nav li a {
@@ -378,16 +383,18 @@ footer .flex-container li {
 .main-header-section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   border: 3px solid yellow;
 }
 
-.header-description {
+.section.header-description {
   display: flex;
   /* justify-items: flex-end; */
   width: 50%;
   text-align: left;
   border: 3px solid purple;
-  align-self: flex-start;
+  margin: 0;
+  /* align-self: flex-start; */
 }
 
 /* -----DOT ACTIVE NAV BAR */
@@ -424,7 +431,7 @@ nav .color-dot-nav-inactive {
 
   nav {
     /* justify-items: center; */
-    align-items: baseline;
+    align-items: flex-end;
   }
 
   a.nav-link {
