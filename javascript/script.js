@@ -64,7 +64,7 @@ let wordsArr = ["Service Designer", "Sushi Lover", "Design Thinker"];
 
 setInterval(function() {
   $randomWord.innerText = wordsArr[index++ % wordsArr.length];
-}, 3000); //3000 for every 3 seconds, change later if necessary
+}, 2000); //3000 for every 3 seconds, change later if necessary
 
 //console element that is overflowing the screen width ---
 //very useful https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
