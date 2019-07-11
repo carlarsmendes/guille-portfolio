@@ -9,18 +9,18 @@ const $worksSection = document.getElementById("works");
 
 // const $letsTalkY =
 //   $letsTalkSection.getBoundingClientRect().top + window.scrollY - 300;
-const $letsTalkY = $letsTalkSection.offsetTop - 200;
+const $letsTalkY = $letsTalkSection.offsetTop - 400;
 
 // const $aboutY =
 //   $aboutSection.getBoundingClientRect().top + window.scrollY - 300;
 
-const $aboutY = $aboutSection.offsetTop;
+const $aboutY = $aboutSection.offsetTop - 400;
 console.log("offset", $aboutSection.offsetTop);
 console.log("this.scrollY", this.scrollY);
 
 // const $worksY =
 //   $worksSection.getBoundingClientRect().top + window.scrollY + 200;
-const $worksY = $worksSection.offsetTop;
+const $worksY = $worksSection.offsetTop - 400;
 
 const $navLinkAbout = document.getElementById("nav-link-about");
 const $navLinkWorks = document.getElementById("nav-link-works");
