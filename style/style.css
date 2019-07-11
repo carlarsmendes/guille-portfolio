@@ -47,7 +47,7 @@ h2 {
 }
 
 .section {
-  min-height: 30vh;
+  min-height: 35vh;
   width: 100%;
   align-items: center;
   margin: 0 auto 0 auto;
@@ -213,7 +213,7 @@ nav li a {
 
 .works-section .container .project img {
   min-width: 300px;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
@@ -222,7 +222,7 @@ nav li a {
 
 .works-section .container .project:hover img {
   min-width: 300px;
-  max-width: 800px;
+  max-width: 600px;
   filter: brightness(25%);
 }
 
@@ -243,6 +243,7 @@ nav li a {
   position: relative;
   text-align: center;
   color: white;
+  /* width: 50%; */
 }
 
 .project-description {
@@ -291,12 +292,11 @@ nav li a {
   background-color: #fafafa;
   flex-direction: column;
   align-items: flex-start;
-
-  /* border: 3px solid purple; */
 }
 #letstalk h2 {
   margin: 0;
 }
+
 #letstalk p {
   margin: 20px 0 40px 0;
 }
@@ -308,6 +308,7 @@ footer .flex-container {
   justify-content: space-between;
   font-family: "Quicksand", sans-serif;
   padding: 0px;
+  margin-bottom: 0;
 }
 
 footer .flex-container li {
@@ -340,6 +341,10 @@ footer .flex-container li {
 .wraper-bg {
   width: 100%;
   background-color: #fafafa;
+}
+
+.lets-speak {
+  justify-content: center;
 }
 
 /* -----------DOT ACTIVE NAV BAR -------------------*/
@@ -410,9 +415,5 @@ nav .color-dot-nav-inactive {
 
   footer h2 {
     margin-bottom: 0;
-  }
-
-  footer .flex-container {
-    margin-bottom: 60px;
   }
 }
