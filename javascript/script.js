@@ -7,12 +7,20 @@ const $letsTalkSection = document.getElementById("letstalk");
 const $aboutSection = document.getElementById("about");
 const $worksSection = document.getElementById("works");
 
-const $letsTalkY =
-  $letsTalkSection.getBoundingClientRect().top + window.scrollY - 300;
-const $aboutY =
-  $aboutSection.getBoundingClientRect().top + window.scrollY - 300;
-const $worksY =
-  $worksSection.getBoundingClientRect().top + window.scrollY + 200;
+// const $letsTalkY =
+//   $letsTalkSection.getBoundingClientRect().top + window.scrollY - 300;
+const $letsTalkY = $letsTalkSection.offsetTop - 200;
+
+// const $aboutY =
+//   $aboutSection.getBoundingClientRect().top + window.scrollY - 300;
+
+const $aboutY = $aboutSection.offsetTop;
+console.log("offset", $aboutSection.offsetTop);
+console.log("this.scrollY", this.scrollY);
+
+// const $worksY =
+//   $worksSection.getBoundingClientRect().top + window.scrollY + 200;
+const $worksY = $worksSection.offsetTop;
 
 const $navLinkAbout = document.getElementById("nav-link-about");
 const $navLinkWorks = document.getElementById("nav-link-works");

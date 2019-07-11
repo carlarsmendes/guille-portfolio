@@ -47,7 +47,7 @@ h2 {
 }
 
 .section {
-  min-height: 35vh;
+  min-height: 25vh;
   width: 100%;
   align-items: center;
   margin: 0 auto 0 auto;
@@ -394,6 +394,11 @@ nav .color-dot-nav-inactive {
 
   p {
     font-size: 16px;
+  }
+
+  .section {
+    min-height: 40vh;
+    margin: 3px solid yellow;
   }
 
   nav {
