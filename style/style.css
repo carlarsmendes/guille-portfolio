@@ -217,7 +217,7 @@ nav li a {
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
-  /* border:3px solid red; */
+    /* border:3px solid red; */
 }
 
 .works-section .container .project:hover img {
@@ -359,6 +359,15 @@ nav .color-dot-nav-active {
 nav .color-dot-nav-inactive {
   visibility: hidden;
 }
+#header {
+  display:flex;
+}
+.section2 {
+  align-self: flex-end;
+}
+.section2 h2{
+margin: 0 150px
+}
 
 /* ---------------- MEDIA QUERIES FOR MOBILE------------------------ */
 
@@ -417,11 +426,7 @@ nav .color-dot-nav-inactive {
   footer h2 {
     margin-bottom: 0;
   }
-  .section2 h2 {
-    margin: 50 0 0 500;
-    width: 100%;  
-
-  }
+ 
     
   }
 
