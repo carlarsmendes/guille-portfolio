@@ -217,7 +217,7 @@ nav li a {
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
-  border:3px solid red;
+  /* border:3px solid red; */
 }
 
 .works-section .container .project:hover img {
@@ -363,6 +363,7 @@ nav .color-dot-nav-inactive {
 /* ---------------- MEDIA QUERIES FOR MOBILE------------------------ */
 
 @media only screen and (max-width: 825px) {
+ 
   body {
     font-size: 16px;
   }
@@ -416,4 +417,11 @@ nav .color-dot-nav-inactive {
   footer h2 {
     margin-bottom: 0;
   }
-}
+  .section2 h2 {
+    margin: 50 0 0 500;
+    width: 100%;  
+
+  }
+    
+  }
+
