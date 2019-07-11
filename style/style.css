@@ -171,8 +171,20 @@ nav li a {
   0% {
     opacity: 1;
   }
+  25% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0;
+  }
   50% {
     opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
