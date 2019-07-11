@@ -229,6 +229,7 @@ nav li a {
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
+  /* border:3px solid red; */
 }
 
 .works-section .container .project:hover img {
@@ -296,7 +297,7 @@ nav li a {
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
 #letstalk {
-  padding: 10% 0 10% 0;
+  padding: 15% 0 15% 0;
   display: flex;
   margin: 0 auto 0 auto;
   width: 90%;
@@ -374,6 +375,7 @@ nav .color-dot-nav-inactive {
 /* ---------------- MEDIA QUERIES FOR MOBILE------------------------ */
 
 @media only screen and (max-width: 825px) {
+ 
   body {
     font-size: 16px;
   }
@@ -427,4 +429,11 @@ nav .color-dot-nav-inactive {
   footer h2 {
     margin-bottom: 0;
   }
-}
+  .section2 h2 {
+    margin: 50 0 0 500;
+    width: 100%;  
+
+  }
+    
+  }
+
