@@ -16,7 +16,6 @@ body {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
-  /* font-family: 'EB Garamond', serif; */
   color: #1c1515;
   font-size: 18px;
   max-width: 100%;
@@ -49,9 +48,6 @@ h2 {
 
 .section {
   min-height: 30vh;
-  /* display:flex;
-	align-items:center; */
-  /* border:3px solid yellow; */
   width: 100%;
   align-items: center;
   margin: 0 auto 0 auto;
@@ -83,12 +79,10 @@ nav {
   z-index: 1;
   height: 40px;
   padding-bottom: 15px;
-  /* border: 3px solid orange; */
 }
 
 nav .navbar-brand {
   flex-grow: 1;
-  /* border: 3px solid orange; */
   margin-left: 5.1vw;
   text-decoration: none;
   color: #1c1515;
@@ -106,7 +100,6 @@ nav .navbar-brand .color-dot.current {
 nav ul {
   width: 50%;
   display: flex;
-  /* border: 3px solid green; */
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 0 0 0 0;
@@ -133,12 +126,9 @@ nav li a {
 
 .section.header-description {
   display: flex;
-  /* justify-items: flex-end; */
   width: 50%;
   text-align: left;
-  border: 3px solid purple;
   margin: 0;
-  /* align-self: flex-start; */
 }
 
 .header-flex-container {
@@ -281,6 +271,7 @@ nav li a {
   justify-content: center;
   align-content: center;
 }
+
 #about,
 #works,
 #header {
@@ -364,14 +355,13 @@ nav .color-dot-nav-inactive {
 }
 
 /* ---------------- MEDIA QUERIES FOR MOBILE------------------------ */
+
 @media only screen and (max-width: 825px) {
   body {
     font-size: 16px;
   }
   h1 {
     font-size: 65px;
-    /* margin-top: 90px; */
-    /* line-height: 80px; */
   }
 
   h2 {
@@ -383,7 +373,6 @@ nav .color-dot-nav-inactive {
   }
 
   nav {
-    /* justify-items: center; */
     align-items: flex-end;
   }
 
@@ -408,6 +397,7 @@ nav .color-dot-nav-inactive {
   .row-1 {
     width: 100%;
   }
+
   .row-2 {
     width: 100%;
     margin: 0;
@@ -416,9 +406,11 @@ nav .color-dot-nav-inactive {
   footer a {
     font-size: 13px;
   }
+
   footer h2 {
     margin-bottom: 0;
   }
+
   footer .flex-container {
     margin-bottom: 60px;
   }
