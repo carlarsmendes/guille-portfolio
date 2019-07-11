@@ -8,11 +8,11 @@ const $aboutSection = document.getElementById("about");
 const $worksSection = document.getElementById("works");
 
 const $letsTalkY =
-  $letsTalkSection.getBoundingClientRect().top + window.scrollY - 500;
+  $letsTalkSection.getBoundingClientRect().top + window.scrollY - 300;
 const $aboutY =
-  $aboutSection.getBoundingClientRect().top + window.scrollY - 500;
+  $aboutSection.getBoundingClientRect().top + window.scrollY - 300;
 const $worksY =
-  $worksSection.getBoundingClientRect().top + window.scrollY - 500;
+  $worksSection.getBoundingClientRect().top + window.scrollY + 200;
 
 const $navLinkAbout = document.getElementById("nav-link-about");
 const $navLinkWorks = document.getElementById("nav-link-works");
@@ -26,11 +26,11 @@ console.log("worksSection Y", $worksY);
 
 window.onscroll = () => {
   const nav = document.querySelector("#navbar");
-  //console.log("this.scrollY", this.scrollY);
+  console.log("this.scrollY", this.scrollY);
 
   if (this.scrollY >= $letsTalkY) {
-    console.log("$letsTalkY", $letsTalkY, "scroll.y", this.scrollY);
-    console.log("Let's Talk");
+    // console.log("$letsTalkY", $letsTalkY, "scroll.y", this.scrollY);
+    console.log("Let's Talk", $letsTalkY);
     nav.className = "letstalk";
 
     $navLinkLetstalk.className = "color-dot-nav-active";
@@ -47,7 +47,7 @@ window.onscroll = () => {
     $navLinkAbout.className = "color-dot-nav-active";
     $navLinkLetstalk.className = "color-dot-nav-inactive";
     $navLinkWorks.className = "color-dot-nav-inactive";
-    console.log("About");
+    console.log("About", $aboutY);
   } else {
     console.log("Header");
     nav.className = "";
