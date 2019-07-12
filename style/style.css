@@ -62,7 +62,11 @@ p {
   line-height: 1.28;
   letter-spacing: 1.4px;
 }
-
+a{
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
 /*---------Specific Styles------------*/
 
 /* ----------NAV-BAR------------- */
@@ -229,7 +233,7 @@ nav li a {
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
-  margin: 3px 6px;
+  margin: 30px 15px;
   /* border:3px solid red; */
 }
 
