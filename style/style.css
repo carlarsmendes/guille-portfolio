@@ -62,7 +62,11 @@ p {
   line-height: 1.28;
   letter-spacing: 1.4px;
 }
-
+a{
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
 /*---------Specific Styles------------*/
 
 /* ----------NAV-BAR------------- */
