@@ -28,30 +28,30 @@ const $navLinksArray = [$navLinkAbout, $navLinkWorks, $navLinkLetstalk];
 
 window.onscroll = () => {
   const nav = document.querySelector("#navbar");
-  console.log("this.scrollY", this.scrollY);
+  // console.log("this.scrollY", this.scrollY);
 
   if (this.scrollY >= $letsTalkY) {
     // console.log("$letsTalkY", $letsTalkY, "scroll.y", this.scrollY);
-    console.log("Let's Talk", $letsTalkY);
+    // console.log("Let's Talk", $letsTalkY);
     nav.className = "letstalk";
 
     $navLinkLetstalk.className = "color-dot-nav-active";
     $navLinkAbout.className = "color-dot-nav-inactive";
     $navLinkWorks.className = "color-dot-nav-inactive";
   } else if (this.scrollY >= $worksY && this.scrollY < $letsTalkY) {
-    console.log("Works");
+    // console.log("Works");
     nav.className = "works";
     $navLinkWorks.className = "color-dot-nav-active";
     $navLinkAbout.className = "color-dot-nav-inactive";
     $navLinkLetstalk.className = "color-dot-nav-inactive";
   } else if (this.scrollY >= $aboutY && this.scrollY < $worksY) {
-    console.log("$aboutY", $aboutY, "scroll.y", this.scrollY);
+    // console.log("$aboutY", $aboutY, "scroll.y", this.scrollY);
     $navLinkAbout.className = "color-dot-nav-active";
     $navLinkLetstalk.className = "color-dot-nav-inactive";
     $navLinkWorks.className = "color-dot-nav-inactive";
-    console.log("About", $aboutY);
+    // console.log("About", $aboutY);
   } else {
-    console.log("Header");
+    // console.log("Header");
     nav.className = "";
     $navLinkAbout.className = "color-dot-nav-inactive";
     $navLinkLetstalk.className = "color-dot-nav-inactive";
