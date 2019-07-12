@@ -1,5 +1,5 @@
 // Here to write the random words(so that they're not in CSS anymore)
-const $randomWord = document.getElementById("js-randomWord");
+const $randomWord = document.getElementById("randomWord");
 
 const $mainSection = document.getElementById("main-section");
 
@@ -9,28 +9,22 @@ const $worksSection = document.getElementById("works");
 
 // const $letsTalkY =
 //   $letsTalkSection.getBoundingClientRect().top + window.scrollY - 300;
-const $letsTalkY = $letsTalkSection.offsetTop - 400;
+const $letsTalkY = $letsTalkSection.offsetTop - 350;
 
 // const $aboutY =
 //   $aboutSection.getBoundingClientRect().top + window.scrollY - 300;
 
-const $aboutY = $aboutSection.offsetTop - 400;
-console.log("offset", $aboutSection.offsetTop);
-console.log("this.scrollY", this.scrollY);
+const $aboutY = $aboutSection.offsetTop - 350;
 
 // const $worksY =
 //   $worksSection.getBoundingClientRect().top + window.scrollY + 200;
-const $worksY = $worksSection.offsetTop - 400;
+const $worksY = $worksSection.offsetTop - 350;
 
 const $navLinkAbout = document.getElementById("nav-link-about");
 const $navLinkWorks = document.getElementById("nav-link-works");
 const $navLinkLetstalk = document.getElementById("nav-link-letstalk");
 
 const $navLinksArray = [$navLinkAbout, $navLinkWorks, $navLinkLetstalk];
-
-console.log("aboutSection Y", $aboutY);
-console.log("letsTalkSection Y", $letsTalkY);
-console.log("worksSection Y", $worksY);
 
 window.onscroll = () => {
   const nav = document.querySelector("#navbar");
