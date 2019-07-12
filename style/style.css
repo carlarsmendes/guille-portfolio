@@ -47,7 +47,7 @@ h2 {
 }
 
 .section {
-  min-height: 25vh;
+  min-height: 20vh;
   width: 100%;
   align-items: center;
   margin: 0 auto 0 auto;
@@ -168,7 +168,7 @@ nav li a {
 }
 
 @keyframes blink {
-  0% {
+  /* 0% {
     opacity: 1;
   }
   25% {
@@ -176,11 +176,11 @@ nav li a {
   }
   40% {
     opacity: 0;
-  }
+  } */
   50% {
     opacity: 0;
   }
-  60% {
+  /* 60% {
     opacity: 0;
   }
   75% {
@@ -188,7 +188,7 @@ nav li a {
   }
   100% {
     opacity: 1;
-  }
+  } */
 }
 
 /* -------------ABOUT------------------- */
