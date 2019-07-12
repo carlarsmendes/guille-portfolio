@@ -62,7 +62,7 @@ p {
   line-height: 1.28;
   letter-spacing: 1.4px;
 }
-a{
+a {
   text-decoration: inherit;
   color: inherit;
   cursor: pointer;
@@ -167,9 +167,9 @@ nav li a {
   justify-content: flex-start;
 }
 
-.animation {
+/* .animation {
   animation: blink 2s linear infinite;
-}
+} */
 
 @keyframes blink {
   /* 0% {
