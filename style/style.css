@@ -76,14 +76,15 @@ nav {
   align-items: flex-end;
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100vw; /* Full width */
+  position: fixed; 
+  top: 0; 
+  width: 100vw;
   background-color: #ffffff;
   z-index: 1;
   height: 40px;
   padding-bottom: 15px;
-}
+  
+} 
 
 nav .navbar-brand {
   flex-grow: 1;
@@ -91,6 +92,7 @@ nav .navbar-brand {
   text-decoration: none;
   color: #1c1515;
   align-content: flex-end;
+  margin-left: 128px;
 }
 
 nav .navbar-brand .color-dot {
@@ -101,13 +103,14 @@ nav .navbar-brand .color-dot.current {
   background: black;
 }
 
-nav ul {
-  width: 50%;
+
+ nav ul {
+  width: 45%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 0 0 0 0;
-  margin: 0;
+  margin:15px 35px 0 0;
 }
 
 nav li {
@@ -116,9 +119,9 @@ nav li {
   padding: 0;
   margin: 0;
   text-align: center;
-}
+} 
 
-nav li a {
+ nav li a {
   text-decoration: none;
   text-align: center;
   color: #1c1515;
@@ -203,9 +206,9 @@ nav li a {
 }
 
 .about-section .col-2 {
-  width: 35%;
+  min-width: 250px;
+  max-width: 580px;
 }
-
 /* -------------WORKS------------------- */
 
 .works-section {
@@ -219,6 +222,7 @@ nav li a {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-between
 }
 
 .works-section h2 {
@@ -229,17 +233,16 @@ nav li a {
 
 .works-section .container .project img {
   min-width: 250px;
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
   transition: filter 0.2s;
   object-fit: cover;
-  margin: 30px 15px;
   /* border:3px solid red; */
 }
 
 .works-section .container .project:hover img {
   min-width: 250px;
-  max-width: 600px;
+  max-width: 550px;
   filter: brightness(25%);
 }
 
@@ -278,12 +281,23 @@ nav li a {
   align-content: center;
 }
 
+.wraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 #about,
 #works,
 #header {
-  margin: 0 auto 0 auto;
+  margin: 0 128px 0 128px;
   width: 90%;
   height: 100%;
+}
+section2 {
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite
 }
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
@@ -291,7 +305,7 @@ nav li a {
 #letstalk {
   padding: 15% 0 15% 0;
   display: flex;
-  margin: 0 auto 0 auto;
+  margin: 0 128px 0 128px;
   width: 90%;
   background-color: #fafafa;
   flex-direction: column;
@@ -402,7 +416,6 @@ nav .color-dot-nav-inactive {
   a.nav-link {
     font-size: 14px;
   }
-
   #header {
     min-height: 100vh;
     display: flex;
@@ -417,10 +430,7 @@ nav .color-dot-nav-inactive {
     margin: 0 0;
   }
 
-  .works-section .container .project img {
-    margin: 5px 0px;
-    /* border:3px solid red; */
-  }
+
 
   .about-section .col-2 {
     width: 100%;
