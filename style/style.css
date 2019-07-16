@@ -81,8 +81,8 @@ nav {
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100vw; /* Full width */
+  top: 0; /*Position the navbar at the top of the page*/
+  width: 100vw; /*Full width*/
   background-color: #ffffff;
   z-index: 1;
   height: 40px;
@@ -138,6 +138,8 @@ nav li a {
   cursor: pointer;
   font-size: 18px;
 }
+
+/*- ---------BURGER NAV BAR-------- */
 
 /* ----------HEADER------------- */
 
@@ -507,7 +509,7 @@ nav .color-dot-nav-inactive {
     min-height: 30vh;
   }
 
-  nav {
+  /* nav {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
@@ -515,7 +517,7 @@ nav .color-dot-nav-inactive {
 
   a.nav-link {
     font-size: 14px;
-  }
+  } */
 
   #header {
     min-height: 100vh;
